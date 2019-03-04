@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bmw motor sport</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/icono.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</head>
+
+<body>
+    <div id="wrapper" class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <a class="navbar-brand" href="#"><img src="img/icono.jpg" alt="Logo de la empresa" width="60vw"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Series<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#historia">Historia</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#donde" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Series
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#serie1">Serie 1</a>
+                            <a class="dropdown-item" href="#serie2">Serie 2</a>
+                            <a class="dropdown-item" href="#serie3">Serie 3</a>
+                            <a class="dropdown-item" href="#serie4">Serie 4</a>
+                            <a class="dropdown-item" href="#serie5">Serie 5</a>
+                            <a class="dropdown-item" href="#serie6">Serie 6</a>
+                            <a class="dropdown-item" href="#serie7">Serie 7</a>
+                            <a class="dropdown-item" href="#serie8">Serie 8</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Otros</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#donde">Contactar</a>
+                        </li>
+                    </ul>
+                        <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalLong">
+        Cuestionario
+      </button>
+
+      
+      
+                <!--<form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                          </form>-->
+            </div>
+        </nav>
+        <!-- Modal -->
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Cuestionario</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                        <form style="margin-top: 10px">
+                                <div class="form-group">
+                                        <label>Nombre</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1">
+                                      </div>
+                                <div class="form-group">
+                                        <label for="exampleFormControlInput1">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ejemplo@gmail.com">
+                                      </div>
+                                <div class="form-group">
+                                  <label for="exampleInputPassword1">Contraseña</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                                </div>
+                                <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Serie Favorita</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                          <option>Serie 1</option>
+                                          <option>Serie 2</option>
+                                          <option>Serie 3</option>
+                                          <option>Serie 4</option>
+                                          <option>Serie 5</option>
+                                          <option>Serie 6</option>
+                                          <option>Serie 7</option>
+                                          <option>Serie 8</option>
+                                        </select>
+                                      </div>
+                                <div class="form-group form-check">
+                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-dark">Enviar</button>
+                              </form>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>    
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/serie1.jpg" class="d-block w-100" alt="Serie 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/serie2.jpg" class="d-block w-100" alt="Serie 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/serie3.jpg" class="d-block w-100" alt="Serie 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/serie4.jpg" class="d-block w-100" alt="Serie 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/serie5.jpg" class="d-block w-100" alt="Serie 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/serie6.jpg" class="d-block w-100" alt="Serie 6">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/serie7.jpg" class="d-block w-100" alt="Serie 7">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/serie8.jpg" class="d-block w-100" alt="Serie 8">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+
+
+        <div id="historia"class="jumbotron jumbotron-fluid text-dark">
+            <div class="container">
+                <h1 class="display-4">Historia</h1>
+                <p class="lead">
+                    Precisamente en 1917 la empresa decide variar su anterior denominación, Rapp-Motorenwerke, a
+                    Bayerische Motoren Werke.
+
+                    En el año 1923, la empresa crea su primera motocicleta, mientras que en el año 1929 fabrica su
+                    primer automóvil, el BMW 3/15 PS (conocido también como AM1).
+
+                    En los años 60, la empresa alcanza unos niveles de producción y venta realmente importantes,
+                    contando con 7.000 trabajadores y 239 millones de marcos anuales de facturación.
+
+                    En el año 1965 se lanza su conocido slogan en Alemania “Aus Freude am Fahren” (“Conducir por
+                    ilusión”), y en 1969 este otro, “Freude am Fahren” (“Diversión en conducir”), que alcanzan una gran
+                    popularidad.
+
+                    La década de los 90 arranca con casi 71.000 empleados y unas ventas anuales de más de 27.000
+                    millones de marcos. La progresión de la marca a nivel internacional es imparable.
+
+                    Su slogan más conocido e impactante fue el icónico “¿Te gusta conducir?“, que marcó a una generación
+                    entera de conductores.
+
+                    Ésta fue sustituido hace poco tiempo por el nuevo y responsable “Cuando conduzcas, conduce“.
+                </p>
+            </div>
+
+
+
+            <div class="card" id="serie2">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Serie 1
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                        <div class="card-body">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/serie1.jpg" class="d-block w-100" alt="serie 1(1)">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/serie1_2.jpg" class=" d-block w-100" alt="serie 1(2)">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                                <p>
+                                    El enfoque del BMW Serie 1 es claramente más deportivo que sus rivales directos y su
+                                    característica fundamental es su esquema de propulsión trasera, un detalle que lo
+                                    distingue fuertemente de toda su competencia y constituye en sí mismo un
+                                    planteamiento de mercado. La tracción trasera del Serie 1 implica que las ruedas
+                                    delanteras únicamente tienen que dirigir el vehículo y las traseras únicamente
+                                    impulsarlo, lo cual se traduce en un tacto de dirección más puro y mucho más
+                                    agradable para el conductor. La diferencia es más importante cuanto más potente es
+                                    la versión.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="serie2">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Serie 2
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/serie2.jpg" class="d-block w-100" alt="serie 2(1)">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/serie2_2.jpg" class="d-block w-100" alt="serie2(2)">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                                <p>
+                                    El diseño del BMW Serie 2 responde al típico de un coupé de la firma alemana. Su
+                                    frontal, como es habitual, está presidido por los dos riñones de la marca, que se
+                                    combinan a la perfección con los faros delanteros con forma de lágrima. La
+                                    superficie acristalada no es muy grande, como es habitual en un coupé de pequeñas
+                                    dimensiones.
+
+                                    Su carrocería, de 4.43 metros, ofrece unas líneas muy compensadas, con un tercer
+                                    voladizo muy bien integrado tanto en la versión coupé como en la variante
+                                    descapotable, con un techo blando de lona plegable eléctricamente. La tecnología LED
+                                    se extiende tanto en los grupos ópticos delanteros como en los pilotos posteriores.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="serie3">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                Serie 3
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapse3" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/serie3.jpg" class="d-block w-100" alt="serie 3(1)">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/serie3_2.jpg" class=" d-block w-100" alt="serie 3(2)">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                                <p>
+                                    En cuanto a su diseño, la última generación del BMW Serie 3 ha mantenido un diseño
+                                    un tanto continuista pero bien puesto al día. Destacan la decisión de mantener sus
+                                    ópticas delanteras unidas con la parrilla, así como la actualización de la imagen
+                                    del capó, más musculoso que el de su predecesor.
+
+                                    En su interior, siguiendo la línea habitual de la marca, un diseño sobrio, pero bien
+                                    acabado, con buen nivel de espacio tanto en las plazas delanteras como en las
+                                    traseras. Se combina las inserciones metálicas con el cuero y se da la bienvenida al
+                                    nuevo cuadro de mandos digital de BMW con el que se pretende dar la respuesta al
+                                    Virtual Cockpit de Audi. La pantalla del sistema de entretenimiento, que hasta ahora
+                                    sobresalía por encima del salpicadero, queda ahora incrustada.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="serie4">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                Serie 4
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapse4" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/serie4.jpg" class="d-block w-100" alt="serie 4(1)">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/serie4_2.jpg" class=" d-block w-100" alt="serie 4(2)">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                                <p>
+                                    BMW Serie 4 Gran Coupé en el que sobre todo destaca cómo se ha buscado ofrecer la
+                                    practicidad de un sedán, con cuatro puertas, y el toque deportivo de un coupé, por
+                                    su diseño de carrocería, y por detalles como las ventanillas sin marco.
+
+                                    También existe un BMW M4, que, tanto con carrocería Coupé, como Cabrio, se convierte
+                                    en una de las referencias deportivas de la marca y en la versión más picante de la
+                                    gama BMW Serie 4.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="serie5">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                Serie 5
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapse5" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/serie5.jpg" class="d-block w-100" alt="serie 5(1)">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/serie5_2.jpg" class=" d-block w-100" alt="serie 5(2)">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                                <p>
+                                    El BMW Serie 5 es un sedán de lujo, de gama alta, que se renovó por completo a
+                                    finales de 2017 con una nueva generación que destaca por ser más confortable, muy
+                                    tecnológica y muy eficiente gracias a una nueva gama de motores y al significativo
+                                    ahorro de peso al que ha asistido, con 100 kilogramos menos con respecto a su
+                                    predecesor gracias al uso de aluminio y aceros de alta resistencia. A menudo
+                                    definimos al BMW Serie 5 como un BMW Serie 7 en miniatura y es que, si bien este
+                                    último es más lujoso y distinguido, la tecnología y el confort del Serie 5 no están
+                                    lejos del ofrecido por su hermano mayor.
+
+                                    Entre los rivales del BMW Serie 5 nos encontramos con el Mercedes Clase E y el Audi
+                                    A6, como los más importantes, con diferencia. Pero también con otras alternativas no
+                                    menos interesantes, como el Jaguar XF o el Lexus GS, que con diferentes
+                                    características también pueden plantar cara al BMW Serie 5. La berlina cuenta con
+                                    unas dimensiones de 4.966 mm de longitud, 1.473 mm de alto y 1.903 mm de ancho,
+                                    mientras que el espacio de carga del maletero se sitúa en 530 litros.
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="serie 6">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                Serie 6
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapse6" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/serie6.jpg" class="d-block w-100" alt="serie 6(1)">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/serie6_2.jpg" class=" d-block w-100" alt="serie 6(2)">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                                <p>
+                                    El BMW Serie 6 es un producto que se presenta con cuatro carrocerías: Coupé, Cabrio,
+                                    Gran-Coupé (sedán con diseño de coupé) y, por último, Gran Turismo, el cual llega al
+                                    mercado como relevo de la Serie 5 Gran Turismo. Dos variantes dos puertas y otras
+                                    dos cuatro puertas en las que BMW ha plasmado su tradicional elegancia y diseño.
+
+                                    Al igual que sucede en la Serie 4, el BMW Serie 6 se presenta en un principio con
+                                    una gama de dos carrocerías desde su lanzamiento en 2011 y su posterior
+                                    actualización a fínales de 2014 (nueva configuración de la parrilla ovoide doble
+                                    típica de BMW, así como el nuevo diseño de los faldones delantero y posterior): El
+                                    BMW Serie 6 Coupé se trata, valga la redundancia, de un coupé de dos puertas de
+                                    carácter deportivo situado un escalón por encima del BMW Serie 4.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="serie7">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                Serie 7
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapse7" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/serie7.jpg" class="d-block w-100" alt="serie 7(1)">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/serie7_2.jpg" class=" d-block w-100" alt="serie 7(2)">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                                <p>
+                                    El BMW Serie 7 es un gran sedán de lujo, que se sitúa como el producto más lujoso y
+                                    distinguido de BMW – con diferencia – y que destaca sobre todo por ser la punta de
+                                    la lanza tecnológica de la marca, el buque insignia en el que se estrenan las
+                                    últimas tecnologías de la marca que a lo largo de los próximos años irán recalando
+                                    progresivamente en otros productos más modestos.
+
+                                    Y el mejor ejemplo lo tenemos en el nuevo BMW Serie 5 y en la transferencia
+                                    tecnológica que se ha producido desde el BMW Serie 7 para convertirlo, de alguna
+                                    forma, en un Serie 7 en miniatura.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" id="serie8">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                Serie 8
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapse8" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/serie8.jpg" class="d-block w-100" alt="serie 8(1)">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/serie8_2.jpg" class=" d-block w-100" alt="serie 8(2)">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                                <p>
+                                    El BMW Serie 8 es el coupé más lujoso y tecnológico de BMW. Su denominación hace
+                                    referencia a uno de los emblemas históricos más importantes de BMW: fue escogida en
+                                    los años ochenta, para designar al coupé más distinguido de su gama. Aquel coupé se
+                                    comercializó durante una década completa y marcó numerosos hitos para BMW y para la
+                                    industria del automóvil, estrenando tecnologías que años más tarde acabarían en
+                                    otros productos de la marca.
+
+                                    La segunda generación del BMW Serie 8 ha comenzado a venderse en 2018, como
+                                    reemplazo del BMW Serie 6, creciendo en empaque, lujo y tecnología, con un
+                                    posicionamiento aún más premium. El precio del BMW Serie 8 parte desde 112.600
+                                    euros. Se comercializa en tres carrocerías: Coupé, Cabrio y Grand Coupé. Más
+                                    adelante se presentará un BMW M8 Grand Coupé.
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="card-deck mt-5">
+                <div class="card">
+                  <img src="img/sede1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Sede Central</h5>
+                    <p class="card-text"><small class="text-muted">BMW-Vierzylinder, sede de BMW junto al Museo BMW, Múnich, Alemania.</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/sede2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Sede en Madrid</h5>
+                    <p class="card-text"><small class="text-muted">Sede de española de BMW localizada en Madrid</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="img/sede3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Local en Málaga</h5>
+                    <p class="card-text"><small class="text-muted">Concesionarion oficial BMW en Málaga</small></p>
+                  </div>
+                </div>
+              </div>
+              
+</body>
+<footer style="margin-top: 10px">
+    <section id="donde">
+        <div class="container-fluid bg-dark text-light">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 text-center p-5">
+                    <dl>
+                        <dt class="display-4">Dirección:</dt>
+                        <dd>Av. de José Ortega y Gasset</dd>
+                        <dt>Correo:</dt>
+                        <dd>atencion.cliente@bmw.es</dd>
+                        <dt>Teléfono:</dt>
+                        <dd>952 33 36 00</dd>
+                        <dt>Redes sociales:</dt>
+                        <dd>
+                                <a href="https://www.instagram.com/bmwespana/?hl=es" style="text-decoration:none;color:white;"><i class="fab fa-instagram"></i></a>
+                                <a href="https://twitter.com/bmwespana?lang=es" style="text-decoration:none;color:white;"><i class="fab fa-twitter"></i></a>
+                                <a href="https://es-es.facebook.com/BMW.Espana/" style="text-decoration:none;color:white;"><i class="fab fa-facebook"></i></a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-sm-12 col-md-6 embed-responsive embed-responsive-16by9 ">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.6243610786573!2d-4.480177985362393!3d36.70756358060974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f752931ca5f3%3A0x5a4aa5fb5731dc44!2sBMW+Automotor+-+M%C3%A1laga!5e0!3m2!1ses!2ses!4v1551735380374" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    </div>
+    </div>
+    </section>
+</footer>
+
+</html>
